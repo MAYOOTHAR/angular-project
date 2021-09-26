@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration:none;
+  }
+  .sidebar{
+    position: absolute;
+    width: 100%;
+    background:#020a0ee1;
+    min-height: 100%;
+    transition: all 0.5s ease;
+  }
+  .sidebar header{
+    background: black;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-family: sans-serif;
+    user-select: none;
+    line-height:40px;
+    padding-bottom: 7px;
+  }
+  .sidebar header p{
+   font-size: 25px;
+   letter-spacing: 2px;
+   padding: 5px;
+   white-space: wrap;
+  
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid rgba(80, 80, 0.329);
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.4s;
+  }
+  
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+  ul li:hover a{
+    border-left: 7px solid rgb(50, 200, 238);
+  }
+  
+  

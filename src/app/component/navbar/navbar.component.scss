@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav .logo{
+  color: #ddd888;
+  float: left;
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 30px;
+
+}
+nav{
+  background: black;
+}
+nav::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav ul{
+  float: right;
+  list-style: none;
+  margin-right: 30px;
+  position: relative;
+}
+nav ul li{
+  display: inline-block;
+  background: #020a0ee1;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color:cyan;
+  border-radius: 5px;
+  box-sizing: 0 0 5px #33ffff,
+              0 0 5px #66ffff;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid cyan;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 170px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgb(0,0,0,0.3);
+}
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: inline-block;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input{
+  height: 100%;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding:0 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon{
+  height: 100%;
+  width: 40px;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+nav ul .search-icon .icon:hover{
+  background: #e6e6e6;
+}
+nav ul .search-icon .icon span{
+  color: #222222;
+  font-size: 18px;
+}
